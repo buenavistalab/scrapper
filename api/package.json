@@ -1,0 +1,39 @@
+{
+  "name": "food-api",
+  "version": "1.0.0",
+  "description": "a scrapping bot on https://world.openfoodfacts.org/ using node, mongo and docker",
+  "main": "server.js",
+  "license": "MIT",
+  "author": "saulo filho",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "NODE_ENV=test jest",
+    "build": "node dist/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^3.22.0",
+    "mongoose": "^5.8.11",
+    "node-cron": "^2.0.3",
+    "puppeteer": "^7.0.1",
+    "youch": "^2.0.10",
+    "yup": "^0.28.1"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.3",
+    "@types/jest": "^26.0.20",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "supertest": "^6.1.3"
+  }
+}
